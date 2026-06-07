@@ -2,14 +2,14 @@
 
 # 🜂 Mythos Skills
 
-### Uma biblioteca de **42 skills** de engenharia para o Claude Code — nível _Mythos_
+### Uma biblioteca de **44 skills** de engenharia para o Claude Code — nível _Mythos_
 
 Auditoria · Segurança · Banco de dados · Observabilidade · Rigor operacional · Testes · Frontend · Integrações · Processo · Negócios
 
 **Rigor sub-atômico · Agnósticas de stack · Defensivas · Formato de saída fixo**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e.svg)](./LICENSE)
-![Skills](https://img.shields.io/badge/skills-42-6366f1.svg)
+![Skills](https://img.shields.io/badge/skills-44-6366f1.svg)
 ![Stack](https://img.shields.io/badge/stack-agnóstico-0ea5e9.svg)
 ![Idioma](https://img.shields.io/badge/idioma-pt--BR-f59e0b.svg)
 
@@ -57,9 +57,9 @@ Depois é só pedir a tarefa em linguagem natural (ex.: _"faça uma auditoria de
 
 | Categoria | Skills |
 |-----------|--------|
-| [🔒 Segurança](#-segurança) | 8 |
+| [🔒 Segurança](#-segurança) | 9 |
 | [🗄️ Banco de Dados & Dados](#️-banco-de-dados--dados) | 4 |
-| [📊 Observabilidade & Operação](#-observabilidade--operação) | 4 |
+| [📊 Observabilidade & Operação](#-observabilidade--operação) | 5 |
 | [⚙️ Rigor Operacional & Coordenação](#️-rigor-operacional--coordenação) | 4 |
 | [🐛 Depuração, Testes & Qualidade](#-depuração-testes--qualidade) | 8 |
 | [🎨 Frontend & Arquitetura de UI](#-frontend--arquitetura-de-ui) | 4 |
@@ -114,6 +114,11 @@ Auditoria DevSecOps de prontidão para produção (go/no-go).
 **Quando:** antes do release/deploy final.
 **Cobre:** dependências vulneráveis/CVEs (npm/pip/go/maven/cargo/composer/bundler) · caça a _leftovers_ (rotas de teste, mocks, dados fake, credenciais hardcoded, bypass de auth/feature flags de demo) · plano de remoção + upgrade seguro + checklist go/no-go.
 
+### `https-security-headers-audit`
+Transporte seguro (HTTPS/TLS) e a suíte completa de **security headers**.
+**Quando:** garantir que nada trafega em claro e bloquear downgrade de protocolo.
+**Cobre:** mixed content (scripts/imagens/API/websocket via HTTP) · redirect 301 forçado HTTP→HTTPS · HSTS (includeSubDomains/preload) · CSP (nonce/hash, upgrade-insecure-requests) · X-Frame-Options/frame-ancestors · X-Content-Type-Options · Referrer-Policy · Permissions-Policy · cookies Secure/HttpOnly/SameSite · TLS 1.2+ anti-downgrade · config por Nginx/Apache/Caddy/IIS/Traefik/CDN/framework · validação `curl -I`/Observatory.
+
 ---
 
 ## 🗄️ Banco de Dados & Dados
@@ -161,6 +166,11 @@ Tratamento de erros e UX de falha, frontend e backend.
 Analytics de **produto** orientada a eventos (distinto de logging).
 **Quando:** medir ativação, retenção e conversão.
 **Cobre:** catálogo de eventos como constantes · instrumentação com detecção first-ever (funil de ativação) · auto-tracking de telas via observer de rota · init privacy-first com toggle do usuário · PostHog/Mixpanel/Amplitude.
+
+### `backup-disaster-recovery-audit`
+Resiliência de dados e **disaster recovery** — antes que o incidente aconteça.
+**Quando:** auditar/montar a estratégia de backup/DR (visão SRE/DBA).
+**Cobre:** backups automatizados (dumps, cron/scheduler/K8s CronJob) · regra 3-2-1 com isolamento off-site (a credencial da app nunca pode deletar o backup) · cripto + retenção · RPO/RTO · plano de DR/runbook · **teste de restore** (backup não testado não é backup) · scripts multi-stack (pg_dump/xtrabackup/mongodump/restic → S3/GCS/Azure/B2/R2/MinIO) com verificação por hash e alertas.
 
 ---
 
@@ -332,7 +342,7 @@ mythos-skills/
 ├─ flutter-overflow-guard/
 │  ├─ SKILL.md
 │  ├─ references/   ├─ assets/   └─ scripts/
-└─ … (42 skills) + LICENSE + README.md
+└─ … (44 skills) + LICENSE + README.md
 ```
 
 ## Licença
@@ -341,4 +351,4 @@ mythos-skills/
 
 ## Repositório irmão
 
-📄 [**mythos-prompts**](https://github.com/evertonfernandes3321-wq/mythos-prompts) — os mesmos 42 em **markdown puro**, para colar em qualquer LLM.
+📄 [**mythos-prompts**](https://github.com/evertonfernandes3321-wq/mythos-prompts) — os mesmos 44 em **markdown puro**, para colar em qualquer LLM.
