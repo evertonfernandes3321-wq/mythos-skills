@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#11162b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset=".5" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1280" height="8" fill="url(#accent)"/>
+  <!-- glyph -->
+  <text x="84" y="150" font-size="92" fill="#e5e7eb">🜂</text>
+  <text x="190" y="148" font-size="74" font-weight="800" fill="#f8fafc">Mythos Skills</text>
+  <!-- headline -->
+  <text x="84" y="268" font-size="58" font-weight="800" fill="#f8fafc">44 stack-agnostic Claude Code skills</text>
+  <text x="84" y="330" font-size="34" fill="#94a3b8">Exhaustive, sub-atomic engineering audits — for any language &amp; framework</text>
+  <!-- chips -->
+  <g font-size="26" font-weight="600">
+    <g><rect x="84" y="372" width="190" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="179" y="406" fill="#cbd5e1" text-anchor="middle">Security</text></g>
+    <g><rect x="288" y="372" width="180" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="378" y="406" fill="#cbd5e1" text-anchor="middle">Databases</text></g>
+    <g><rect x="482" y="372" width="250" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="607" y="406" fill="#cbd5e1" text-anchor="middle">Observability</text></g>
+    <g><rect x="746" y="372" width="150" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="821" y="406" fill="#cbd5e1" text-anchor="middle">Testing</text></g>
+    <g><rect x="910" y="372" width="210" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="1015" y="406" fill="#cbd5e1" text-anchor="middle">Performance</text></g>
+  </g>
+  <g font-size="26" font-weight="600">
+    <g><rect x="84" y="440" width="110" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="139" y="474" fill="#cbd5e1" text-anchor="middle">SRE</text></g>
+    <g><rect x="208" y="440" width="220" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="318" y="474" fill="#cbd5e1" text-anchor="middle">Integrations</text></g>
+    <g><rect x="442" y="440" width="170" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="527" y="474" fill="#cbd5e1" text-anchor="middle">Privacy</text></g>
+    <g><rect x="626" y="440" width="230" height="52" rx="26" fill="#1e293b" stroke="#334155"/><text x="741" y="474" fill="#cbd5e1" text-anchor="middle">Run-all auditor</text></g>
+  </g>
+  <!-- footer -->
+  <text x="84" y="572" font-size="28" fill="#64748b">MIT · open source · defensive · fixed output format</text>
+  <text x="84" y="610" font-size="26" fill="#6366f1">github.com/evertonfernandes3321-wq/mythos-skills</text>
+</svg>
